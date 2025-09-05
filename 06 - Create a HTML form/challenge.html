@@ -4,15 +4,7 @@
     <title>06 - Create a HTML form</title>
   </head>
   <body>
-    <label for="name">name</label>
-    <input type="name"><br>
-    <label for="email">email</label>
-    <input type="email"><br>
-    <label for="phone">phone</label>
-    <input type="phone"><br>
-    <label for="password">password</label>
-    <input type="password"><br><br>
-    <button>submit</button>
+    
     
     <!-- Add a form tag to your HTML page.  -->
     <!-- Inside the form tag, add a label tag and set the for attribute to a unique name for your input field.  -->
@@ -24,5 +16,98 @@
     <!-- Add text between the opening and closing button tags that will be displayed on the button. -->
 
     <!-- READUP: HTML forms https://blog.codeskills.dev/html-forms -->
+      <form action="">
+       <fieldset>
+        <legend>Basic</legend>
+        <label for="name">Text (name):</label>
+        <input type="text" id="name" name="name" placeholder="Full name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" email="email" placeholder="user@expample.com" required>
+        <br><label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="at least 8 characters" required>
+        <br>
+        <label for="phone">Telephone:</label>
+        <input type="number" id="number" number="number" placeholder="+2507********" required>
+        <br>
+        <label for="search">search:</label>
+        <input type="text" id="search" search="search" placeholder="search team" required>
+        <br>
+        <label for="URL">URL:</label>
+        <input type="text" id="URL" URL="URL" placeholder="https://www.example.com" required>
+        <br>
+       </fieldset>
+       <fieldset>
+        <legend>Numbers $ Sliders</legend>
+        <label for="text">number:</label>
+        <input type="number" id="number" name="number" min="0" max="100" required>
+        <br>
+        <label for="Range">Range:</label>
+        <input type="Range" id="range" name="range" min="0" max="10" required>
+        <br>
+       </fieldset>
+       <Fieldset>
+        <Legend>Date $ Time</Legend>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <br>
+        <label for="Datetime">Datetime (local):</label>
+        <input type="date" id="Datetime" name="Datetime" placeholder="mm/dd/yyyy, --:-- --"required>
+        <br>
+        <label for="month">month:</label>
+        <input type="time" id="month" name="month" placeholder="mm/yyyy" required>
+        <br>
+        <label for="week">week:</label>
+        <input type="time" id="week" name="week" placeholder="yyyy-Www" required>
+        <br>
+       </Fieldset>
+       <fieldset>
+        <legend>choices</legend>
+        Radio (plan):
+       <label for="Basic">
+        <input type="radio" name="plan" id="Basic" value="Basic" checked> Basic
+       </label>
+        <label for="pro">
+            <input type="radio" name="plan" id="pro" value="pro" checked> pro
+        </label>
+         <label for="Enterprise">
+            <input type="radio" name="plan" id="Enterprise" value="Enterprise" checked> Enterprise
+        </label><br>
+        <label for="">checked</label>
+        <input type="checkbox" value="subscribe to updates">subscribe to updates
+        <input type="checkbox" value="T agree to the teams">T agree to the teams
+        <br>
+        <label for="choose...">select (not input, but cmmon):</label>
+     <input type="choose..." id="select" value="choose..." placeholder="choose..." required >
+       </fieldset>
+       <fieldset>
+        <legend>Text Areas $ Datalists</legend>
+        <label for="Textarea">Textarea:</label><br>
+        <textarea name="Textarea" id="bio" rows="4" cols="40" placeholder="write something..."></textarea>
+        <br> 
+        <label for="">Text with Datalist (country):</label>
+        <input type="text" id="text" value="text" placeholder="start typing...">
+       </fieldset>
+       
+       <fieldset>
+       <legend>color $ files</legend>
+       <label for="color">color:</label>
+       <input type="color" id="color" value="#ffff00" >
+       <br>
+       <label for="">Files upload:</label>
+       <input type="file" id="text" value="choose Files" placeholder="choose Files" required>No files chosen
+       </fieldset>
+       <fieldset>
+        <legend>Hidden & Readoniy</legend>
+        <label for="Read only">Read-only:</label>
+        <input type="text" id="text" value="INV-000123" placeholder="INV-000123">
+        <br>
+        <label for="">Disabled:</label>
+        <input type="text" id="text" value="Disabled example" placeholder="Disabled example">
+       </fieldset>
+    </form>
   </body>
 </html>
